@@ -5,7 +5,7 @@ const app = express();
 
 app.get('/', (req, res) => {
     console.log("routing traffic here");
-    res.send({ hi: 'there'});
+    res.send({ hi: 'there', bye: "buddy"});
 });
 
 const PORT  = process.env.PORT || 5000;
